@@ -14,7 +14,7 @@ defmodule StarkInfra.Utils.API do
   |> cast_json_to_api_format()
   end
 
-  def cast_json_to_api_format(struct) when is_struct(struct) do
+  def cast_json_to_api_format(%{__struct__: _} = struct) do
   struct
   |> Map.from_struct()
   |> cast_json_to_api_format()

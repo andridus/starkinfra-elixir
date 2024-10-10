@@ -9,7 +9,7 @@ defmodule StarkInfra.MixProject do
       homepage_url: "https://starkinfra.com",
       source_url: "https://github.com/starkinfra/sdk-elixir",
       description: description(),
-      elixir: "~> 1.9",
+      elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package()
@@ -39,7 +39,7 @@ defmodule StarkInfra.MixProject do
 
   defp deps do
     [
-      {:starkbank_ecdsa, "~> 1.1.0"},
+      {:starkbank_ecdsa, github: "andridus/ecdsa-elixir"},
       {:jason, "~> 1.1"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
