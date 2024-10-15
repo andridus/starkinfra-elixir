@@ -197,7 +197,7 @@ defmodule StarkInfra.Event do
   """
   @spec update(
     binary,
-    is_delivered: bool,
+    is_delivered: boolean,
     user: Project.t() | Organization.t() | nil
   ) ::
     {:ok, Event.t()} |
@@ -211,7 +211,7 @@ defmodule StarkInfra.Event do
   """
   @spec update!(
     binary,
-    is_delivered: bool,
+    is_delivered: boolean,
     user: Project.t() | Organization.t() | nil
   ) :: Event.t()
   def update!(id, parameters \\ []) do
