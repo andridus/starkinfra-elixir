@@ -40,8 +40,7 @@ defmodule StarkInfra.MixProject do
   defp deps do
     [
       {:starkbank_ecdsa, github: "andridus/ecdsa-elixir"},
-      {:jason, "~> 1.1"},
-      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
+      {:jason, "~> 1.1.0"},
     ]
   end
 end
